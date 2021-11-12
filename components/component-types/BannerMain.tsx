@@ -2,14 +2,14 @@ import React from 'react'
 
 interface Props {
   props: {
-    message: string
+    header: string
   }
 }
 
 const BannerMain = ({ props }: Props) => {
   return (
     <div>
-      banner main: { props.message }
+      { props.header }
     </div>
   )
 }

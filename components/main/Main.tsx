@@ -30,23 +30,23 @@ const componentList = [
     id: 1,
     component: BannerMain,
     props: {
-      message: 'hello'
+      header: 'banner main'
     },
   },
-  // {
-  //   id: 2,
-  //   component: ImageListMain,
-  //   props: {
-  //     message: 'my name is dongjoon min'
-  //   },
-  // },
-  // {
-  //   id: 3,
-  //   component: ProductListMain,
-  //   props: {
-  //     message: 'i am cold'
-  //   },
-  // }
+  {
+    id: 2,
+    component: ImageListMain,
+    props: {
+      header: 'image list main'
+    },
+  },
+  {
+    id: 3,
+    component: ProductListMain,
+    props: {
+      header: 'product list main'
+    },
+  }
 ]
 
 export default Main

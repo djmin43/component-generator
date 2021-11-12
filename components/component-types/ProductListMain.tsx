@@ -1,13 +1,15 @@
 import React from 'react'
 
 interface Props {
-  message: string
+  props: {
+    header: string
+  }
 }
 
-const ProductListMain = ({ message } : Props) => {
+const ProductListMain = ({ props } : Props) => {
   return (
     <div>
-      product list main: {message}
+      {props.header}
     </div>
   )
 }

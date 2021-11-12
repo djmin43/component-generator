@@ -1,13 +1,15 @@
 import React from 'react'
 
 interface Props {
-  message: string
+  props: {
+    header: string
+  }
 }
 
-const ImageListMain = ({ message }: Props) => {
+const ImageListMain = ({ props }: Props) => {
   return (
     <div>
-      image list main: {message}
+      {props.header}
     </div>
   )
 }
