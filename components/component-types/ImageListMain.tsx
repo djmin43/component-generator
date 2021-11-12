@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SubMenu = () => {
+const ImageListMain = () => {
   return (
     <div>
-      sub menu
+      
     </div>
   )
 }
 
-export default SubMenu
+export default ImageListMain
