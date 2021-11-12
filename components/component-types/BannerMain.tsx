@@ -1,13 +1,15 @@
 import React from 'react'
 
 interface Props {
-  message: string
+  props: {
+    message: string
+  }
 }
 
-const BannerMain = ({ message }: Props) => {
+const BannerMain = ({ props }: Props) => {
   return (
     <div>
-      banner main: {message}
+      banner main: { props.message }
     </div>
   )
 }
