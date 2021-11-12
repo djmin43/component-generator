@@ -1,9 +1,13 @@
 import React from 'react'
 
-const BannerMain = () => {
+interface Props {
+  message: string
+}
+
+const BannerMain = ({ message }: Props) => {
   return (
     <div>
-      banner mainasdfsf
+      banner main: {message}
     </div>
   )
 }

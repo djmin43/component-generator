@@ -18,7 +18,7 @@ const Main = () => {
       main page
       {componentList.map(item => 
         <div key={item.id}>
-          {React.createElement(item.component)}
+          {React.createElement(item.component, { message: item.message })}
         </div>
       )}
     </div>
@@ -29,14 +29,17 @@ const componentList = [
   {
     id: 1,
     component: BannerMain,
+    message: 'my name is',
   },
   {
     id: 2,
     component: ImageListMain,
+    message: 'min dongjoon',
   },
   {
     id: 3,
     component: ProductListMain,
+    message: 'i am 33',
   }
 ]
 

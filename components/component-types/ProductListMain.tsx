@@ -1,9 +1,13 @@
 import React from 'react'
 
-const ProductListMain = () => {
+interface Props {
+  message: string
+}
+
+const ProductListMain = ({ message } : Props) => {
   return (
     <div>
-      product list main
+      product list main: {message}
     </div>
   )
 }
