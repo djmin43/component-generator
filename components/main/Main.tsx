@@ -32,6 +32,14 @@ const componentList = [
     props: {
       header: 'banner main'
     },
+    style: {
+      header: {
+
+      },
+      body: {
+
+      },
+    }
   },
   {
     id: 2,
