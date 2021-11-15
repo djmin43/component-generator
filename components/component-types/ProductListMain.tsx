@@ -1,15 +1,16 @@
 import React from 'react'
 
 interface Props {
-  props: {
-    header: string
-  }
+  props: any
 }
 
 const ProductListMain = ({ props } : Props) => {
   return (
     <div>
       {props.header}
+      <div>
+        
+      </div>
     </div>
   )
 }
