@@ -10,7 +10,7 @@ const BannerMain = ({ props }: Props) => {
   return (
     <div>
       {props.header}
-      {props.image.map((image: any) => 
+      {props.imageList.map((image: any) => 
       <div key={image.key}>
         <a href={image.link}>
         <Image
