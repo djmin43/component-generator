@@ -41,11 +41,18 @@ const componentList = [
     component: BannerMain,
     props: {
       header: 'banner main',
+      style: {
+        image: {
+          width: 500,
+          height: 500,
+        }
+      },
       image: [
         {
-          
+          id: 'first-image',
+          src: 'https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1180&q=80'
         }
-      ]
+      ],
     },
   },
   {
