@@ -4,6 +4,7 @@ import ImageListMain from "../component-types/ImageListMain";
 import ProductListMain from "../component-types/ProductListMain";
 import { css } from "@emotion/css";
 import { componentGenerator } from "../../utils/componentGenerator";
+import stringToConvert from "../../utils/stringToComponent";
 
 interface Component {
   id: number;
@@ -21,7 +22,7 @@ const Main = () => {
       <div className={componentContainer}>
         {componentList.map((item) => (
           <div key={item.id}>
-            {componentGenerator(item.component, { props: item.props })}
+            {componentGenerator(stringToConvert(item.component), { props: item.props })}
           </div>
         ))}
       </div>
@@ -39,7 +40,7 @@ const componentContainer = css`
 const componentList = [
   {
     id: 1,
-    component: BannerMain,
+    component: "BannerMain",
     props: {
       header: "banner main",
       imageList: [
@@ -55,7 +56,7 @@ const componentList = [
   },
   {
     id: 2,
-    component: ImageListMain,
+    component: "ImageListMain",
     props: {
       header: "즐거운 회사생활",
       mainImageList: [
@@ -107,7 +108,7 @@ const componentList = [
   },
   {
     id: 3,
-    component: ProductListMain,
+    component: "ProductListMain",
     props: {
       header: "product list main"
     }
