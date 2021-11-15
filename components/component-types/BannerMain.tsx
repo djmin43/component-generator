@@ -7,9 +7,6 @@ interface Props {
 
 const BannerMain = ({ props }: Props) => {
 
-  const handleImageClick = (link: string) => {
-
-  }
   return (
     <div>
       {props.header}
