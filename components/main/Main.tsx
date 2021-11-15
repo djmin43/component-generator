@@ -2,6 +2,7 @@ import React from 'react'
 import BannerMain from '../component-types/BannerMain'
 import ImageListMain from '../component-types/ImageListMain'
 import ProductListMain from '../component-types/ProductListMain'
+import { css } from '@emotion/css'
 
 interface Component {
   id: number,
@@ -16,11 +17,13 @@ const Main = () => {
   return (
     <div>
       main page
-      {componentList.map(item => 
-        <div key={item.id}>
-          {React.createElement(item.component, { props: item.props})}
-        </div>
-      )}
+      <div>
+        {componentList.map(item =>
+          <div key={item.id}>
+            {React.createElement(item.component, { props: item.props})}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
@@ -30,7 +33,7 @@ const componentList = [
     id: 1,
     component: BannerMain,
     props: {
-      header: 'banner main'
+      header: 'banner main',
     },
   },
   {
