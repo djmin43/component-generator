@@ -1,19 +1,17 @@
 import React from 'react'
 
 interface Props {
-  props: {
-    header: string,
-  }
+  props: any
 }
 
 const BannerMain = ({ props }: Props) => {
   return (
     <div>
-      carousel
-      header
       { props.header }
     </div>
   )
 }
+
+
 
 export default BannerMain

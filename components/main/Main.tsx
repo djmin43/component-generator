@@ -17,7 +17,7 @@ const Main = () => {
   return (
     <div>
       main page
-      <div>
+      <div className={componentContainer}>
         {componentList.map(item =>
           <div key={item.id}>
             {React.createElement(item.component, { props: item.props})}
@@ -28,12 +28,24 @@ const Main = () => {
   )
 }
 
+const componentContainer = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+`
+
 const componentList = [
   {
     id: 1,
     component: BannerMain,
     props: {
       header: 'banner main',
+      image: [
+        {
+          
+        }
+      ]
     },
   },
   {
