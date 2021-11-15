@@ -42,15 +42,14 @@ const componentList = [
     props: {
       header: 'banner main',
       style: {
-        image: {
-          width: 500,
-          height: 500,
-        }
       },
       image: [
         {
           id: 'first-image',
-          src: 'https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1180&q=80'
+          src: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+          width: 640,
+          height: 426,
+          link: 'https://unsplash.com/photos/3ORoQEJY9LA'
         }
       ],
     },
