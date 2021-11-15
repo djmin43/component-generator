@@ -22,7 +22,7 @@ export const componentGenerator: ComponentGenerator = (
   props,
   ...children
 ) => {
-  return createElement(components[type], props, ...children);
+  return createElement(type, props, ...children);
 };
 
 const components = {

@@ -1,4 +1,7 @@
 import React from "react";
+import BannerMain from "../component-types/BannerMain";
+import ImageListMain from "../component-types/ImageListMain";
+import ProductListMain from "../component-types/ProductListMain";
 import { css } from "@emotion/css";
 import { componentGenerator } from "../../utils/componentGenerator";
 
@@ -36,7 +39,7 @@ const componentContainer = css`
 const componentList = [
   {
     id: 1,
-    component: "bannerMain",
+    component: BannerMain,
     props: {
       header: "banner main",
       imageList: [
@@ -52,7 +55,7 @@ const componentList = [
   },
   {
     id: 2,
-    component: "imageListMain",
+    component: ImageListMain,
     props: {
       header: "즐거운 회사생활",
       mainImageList: [
@@ -104,7 +107,7 @@ const componentList = [
   },
   {
     id: 3,
-    component: "productListMain",
+    component: ProductListMain,
     props: {
       header: "product list main"
     }
