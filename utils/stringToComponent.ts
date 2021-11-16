@@ -13,12 +13,12 @@ const themeComponent: ComponentType = {
   ProductListMain
 };
 
-type StringToConvert = (
+type StringToComponent = (
   componentName: string
 ) => FunctionComponent<{ props: any }>;
 
-const stringToConvert: StringToConvert = (componentName) => {
+const stringToComponent: StringToComponent = (componentName) => {
   return themeComponent[componentName];
 };
 
-export default stringToConvert;
+export default stringToComponent;
