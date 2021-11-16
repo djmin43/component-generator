@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/css";
 import { componentGenerator } from "../../utils/componentGenerator";
-import stringToConvert from "../../utils/stringToComponent";
+import stringToComponent from "../../utils/stringToComponent";
 
 interface Component {
   id: number;
@@ -20,7 +20,7 @@ const Main = ({componentList}: MainProps) => {
       <div className={componentContainer}>
         {componentList.map((item) => (
           <div key={item.id}>
-            {componentGenerator(stringToConvert(item.component), {
+            {componentGenerator(stringToComponent(item.component), {
               props: item.props
             })}
           </div>

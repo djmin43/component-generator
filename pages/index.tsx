@@ -37,9 +37,12 @@ const componentList = [
   {
     id: 2,
     component: "ImageListMain",
+    children: {
+      productComponent: "Album",
+    },
     props: {
-      header: "즐거운 회사생활",
-      isHeaderActive: true,
+      header: "ghgjghjgjh",
+      isHeaderActive: false,
       mainImageList: [
         {
           id: "first-image",

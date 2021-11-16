@@ -9,7 +9,7 @@ interface AlbumProps {
     discount: number;
     price: number;
     style?: CSSProperties;
-  };
+  } & any;
 }
 
 const Album = ({
@@ -21,7 +21,8 @@ const Album = ({
 }: AlbumProps["props"]) => {
   return (
     <Fragment>
-      <Image src={imageSrc} alt="productName" width={300} height={300} />
+      album
+      {/* <Image src={imageSrc} alt="productName" width={300} height={300} /> */}
       <div className="product-information">
         <span>{brand}</span>
         <span>{productName}</span>

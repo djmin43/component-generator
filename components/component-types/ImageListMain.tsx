@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { componentGenerator } from "../../utils/componentGenerator";
+import stringToComponent from "../../utils/stringToComponent";
 import { css } from "@emotion/css";
+import Album from "../product-types/Album";
 
 interface Props {
   props: any
@@ -26,19 +29,11 @@ const ImageListMain = ({ props }: Props) => {
         </div>
         )}
       </div>
-      <div className="product-container">
-          {props.productList.map((product: any) => 
-          <div key={product.id} className={productStyle}>
-            <a href={product.link}>
-              <Image
-                src={product.image.src}
-                width={product.image.width}
-                height={product.image.height}
-                alt="image"
-              />
-            </a>
-          </div>
-          )}
+      <div>
+        {props.productComponent}
+        {/* {stringToComponent(props.productComponent)} */}
+        {componentGenerator(stringToComponent(props.productComponent), { props })}
+        {/* {componentGenerator(Album, {props: props})} */}
       </div>
     </div>
   );

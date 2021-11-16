@@ -5,9 +5,6 @@ import {
   FunctionComponentElement,
   ReactNode
 } from "react";
-import BannerMain from "../components/component-types/BannerMain";
-import ImageListMain from "../components/component-types/ImageListMain";
-import ProductListMain from "../components/component-types/ProductListMain";
 
 type ComponentGenerator = {
   <P extends {}>(
@@ -23,10 +20,4 @@ export const componentGenerator: ComponentGenerator = (
   ...children
 ) => {
   return createElement(type, props, ...children);
-};
-
-const components = {
-  bannerList: BannerMain,
-  imageListMain: ImageListMain,
-  productListMain: ProductListMain
 };

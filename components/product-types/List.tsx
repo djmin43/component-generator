@@ -9,7 +9,7 @@ interface ListProps {
     discount: number;
     price: number;
     style?: CSSProperties;
-  };
+  } & any;
 }
 
 const List = ({
