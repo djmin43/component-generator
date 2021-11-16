@@ -11,7 +11,7 @@ const BannerMain = ({ props }: Props) => {
     <div>
       {props.header}
       {props.imageList.map((image: any) => 
-      <div key={image.key}>
+      <div key={image.id}>
         <a href={image.link}>
         <Image
           src={image.src}

@@ -19,7 +19,7 @@ const mainIndexPageStyle = css`
 
 const componentList = [
   {
-    id: 1,
+    id: 11234123419234,
     component: "BannerMain",
     props: {
       header: "banner main",
@@ -39,6 +39,7 @@ const componentList = [
     component: "ImageListMain",
     props: {
       header: "즐거운 회사생활",
+      isHeaderActive: true,
       mainImageList: [
         {
           id: "first-image",
@@ -80,7 +81,7 @@ const componentList = [
       ],
       style: {
         header: {
-          fontSize: "100px",
+          fontSize: "50px",
           color: "green"
         }
       }
