@@ -1,7 +1,4 @@
 import React from "react";
-import BannerMain from "../component-types/BannerMain";
-import ImageListMain from "../component-types/ImageListMain";
-import ProductListMain from "../component-types/ProductListMain";
 import { css } from "@emotion/css";
 import { componentGenerator } from "../../utils/componentGenerator";
 import stringToConvert from "../../utils/stringToComponent";
@@ -22,7 +19,9 @@ const Main = () => {
       <div className={componentContainer}>
         {componentList.map((item) => (
           <div key={item.id}>
-            {componentGenerator(stringToConvert(item.component), { props: item.props })}
+            {componentGenerator(stringToConvert(item.component), {
+              props: item.props
+            })}
           </div>
         ))}
       </div>
