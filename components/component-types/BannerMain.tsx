@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 interface Props {
   props: any
@@ -22,9 +22,9 @@ const BannerMain = ({ props }: Props) => {
         </a>
       </div> )}
     </div>
-  )
-}
+  );
+};
 
 
 
-export default BannerMain
+export default BannerMain;

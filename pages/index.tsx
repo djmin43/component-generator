@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Main from '../components/main/Main'
-import ControlBar from '../components/control-bar/ControlBar'
-import { css } from '@emotion/css'
+import type { NextPage } from "next";
+import Main from "../components/main/Main";
+import ControlBar from "../components/control-bar/ControlBar";
+import { css } from "@emotion/css";
 
 const Home: NextPage = () => {
   return (
@@ -9,13 +9,13 @@ const Home: NextPage = () => {
       <Main componentList={componentList} />
       <ControlBar />
     </div>
-  )
-}
+  );
+};
 
 const mainIndexPageStyle = css`
   display: grid;
   grid-template-columns: 1fr 1fr;
-`
+`;
 
 const componentList = [
   {
@@ -97,4 +97,4 @@ const componentList = [
 ];
 
 
-export default Home
+export default Home;

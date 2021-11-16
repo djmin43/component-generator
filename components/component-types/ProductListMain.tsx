@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 interface Props {
   props: any
@@ -12,7 +12,7 @@ const ProductListMain = ({ props } : Props) => {
         
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductListMain
+export default ProductListMain;

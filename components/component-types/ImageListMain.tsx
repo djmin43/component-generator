@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import { css } from '@emotion/css'
+import React from "react";
+import Image from "next/image";
+import { css } from "@emotion/css";
 
 interface Props {
   props: any
@@ -41,11 +41,11 @@ const ImageListMain = ({ props }: Props) => {
           )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const productStyle = css`
   display: flex;
-`
+`;
 
-export default ImageListMain
+export default ImageListMain;
