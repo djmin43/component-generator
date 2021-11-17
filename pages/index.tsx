@@ -37,11 +37,9 @@ const componentList = [
   {
     id: 2,
     component: "ImageListMain",
-    children: {
-      productComponent: "Album",
-    },
     props: {
       header: "ghgjghjgjh",
+      productComponent: "Album",
       isHeaderActive: false,
       mainImageList: [
         {

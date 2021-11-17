@@ -30,10 +30,7 @@ const ImageListMain = ({ props }: Props) => {
         )}
       </div>
       <div>
-        {props.productComponent}
-        {/* {stringToComponent(props.productComponent)} */}
         {componentGenerator(stringToComponent(props.productComponent), { props })}
-        {/* {componentGenerator(Album, {props: props})} */}
       </div>
     </div>
   );
