@@ -2,7 +2,17 @@ import type { NextPage } from "next";
 import Main from "../components/main/Main";
 import ControlBar from "../components/control-bar/ControlBar";
 import { css } from "@emotion/css";
-import { bannerOne, bannerTwo, rankingListOne, subMenuOne, imageListOne, textOverlayImageOne, productOne } from "./sampleComponents";
+import {
+  bannerSquare,
+  bannerRectangle,
+  rankingListOne,
+  subMenuOne,
+  imageListSquare,
+  imageListRectange,
+  imageListLongRectangle,
+  textOverlayImageOne,
+  productOne,
+} from "./sampleComponents";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +29,7 @@ const mainIndexPageStyle = css`
 `;
 
 const componentList = [
-  textOverlayImageOne, subMenuOne, bannerTwo, imageListOne, productOne, bannerOne, rankingListOne, 
+  textOverlayImageOne, imageListRectange, subMenuOne, imageListLongRectangle, bannerSquare, imageListSquare, productOne, bannerRectangle, rankingListOne, 
 ];
 
 
