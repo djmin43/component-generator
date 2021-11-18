@@ -1,13 +1,17 @@
 import React from "react";
 
 interface Props {
-  props: any
+  props: {
+    header: string,
+    subheader: string,
+  }
 }
 
-const TextOverlayImageComponent = ({props}: any) => {
+const TextOverlayImageComponent = ({props}: Props) => {
   return (
     <div>
-      
+      <p>{props.subheader}</p>
+      <p>{props.header}</p>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const componentList = [
     id: 11234123419234,
     component: "BannerComponent",
     props: {
-      header: "banner main",
+      header: "배너",
     }
   },
   {
@@ -34,11 +34,33 @@ const componentList = [
   },
   {
     id: 3123841923492,
-    component: "ProductComponent",
+    component: "RankingListComponent",
     props: {
-      header: "product list main"
+      header: "랭킹"
     }
-  }
+  },
+  {
+    id: 3123841923492,
+    component: "SubMenuComponent",
+    props: {
+      header: "MD'S CHOICE"
+    }
+  },
+  {
+    id: 3123841923492,
+    component: "ImageListComponent",
+    props: {
+      header: "즐거운 집콕생활 \n 닌텐도/레고 외 최대 35% 할인"
+    }
+  },
+  {
+    id: 3123841923492,
+    component: "TextOverlayImageComponent",
+    props: {
+      header: "#TECH",
+      subheader: "이달의 브랜드 & 제품"
+    }
+  },
 ];
 
 
