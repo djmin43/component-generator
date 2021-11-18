@@ -112,7 +112,7 @@ export const imageListRectange = {
     isComponentActive: true,
     header: "안녕하세요 저의 이름은 민동준입니다. 만나서 반갑습니다!",
     link: "https://www.travelflan.com/",
-    productListComponent: "List",
+    productListComponent: "Album",
     productList: null,
     imageList: [
       {

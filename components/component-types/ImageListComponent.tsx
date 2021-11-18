@@ -9,7 +9,7 @@ interface Props {
     isComponentActive: boolean,
     header: string,
     link: string,
-    productionListComponent: string,
+    productListComponent: string,
     productList: any,
     imageList: Image[],
     style: {
@@ -45,8 +45,7 @@ const ImageListComponent = ({props}: Props) => {
         )}
       </div>
       <div className="product-list">
-        {props.productionListComponent}
-        {componentGenerator(Album, {props: props})}
+        {componentGenerator(stringToComponent(props.productListComponent), {props: props})}
       </div>
     </div>
   );

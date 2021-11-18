@@ -25,13 +25,14 @@ const List = ({
         display: "flex"
       }}
     >
-      <Image src={imageSrc} alt="product-name" width={300} height={300} />
+      list card product
+      {/* <Image src={imageSrc} alt="product-name" width={300} height={300} />
       <div>
         <span>{brand}</span>
         <span>{productName}</span>
         <span>{discount}%</span>
         <span>{price}원</span>
-      </div>
+      </div> */}
     </div>
   );
 };

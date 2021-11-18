@@ -21,7 +21,7 @@ const Album = ({
 }: AlbumProps["props"]) => {
   return (
     <Fragment>
-      album card
+      album card product
       {/* <Image src={imageSrc} alt="productName" width={300} height={300} />
       <div className="product-information">
         <span>{brand}</span>
