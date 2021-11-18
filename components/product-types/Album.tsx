@@ -1,34 +1,25 @@
 import { CSSProperties, Fragment } from "react";
 import Image from "next/image";
 
-interface AlbumProps {
-  props: {
-    imageSrc: string;
-    brand: string;
-    productName: string;
-    discount: number;
-    price: number;
-    style?: CSSProperties;
-  } & any;
+type AlbumProps = Album[]
+
+interface Album {
+  id: string,
+  productName: string,
+  discountedPrice: number,
+  originalPrice: number,
+  link: string,
+  image: {
+    id: string,
+    src: string,
+  }
 }
 
-const Album = ({
-  imageSrc,
-  brand,
-  productName,
-  discount,
-  price
-}: AlbumProps["props"]) => {
+const Album = ( props : AlbumProps) => {
+  console.log("testing", props);
   return (
     <Fragment>
       album card product
-      {/* <Image src={imageSrc} alt="productName" width={300} height={300} />
-      <div className="product-information">
-        <span>{brand}</span>
-        <span>{productName}</span>
-        <span>{discount}%</span>
-        <span>{price}원</span>
-      </div> */}
     </Fragment>
   );
 };

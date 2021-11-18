@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import { productListSample } from "./productList";
 
 export const bannerSquare = {
   id: uuidv4(),
@@ -44,7 +45,7 @@ export const rankingListOne = {
   props: {
     isComponentActive: true,
     header: "인기상품",
-    productList: null,
+    productList: productListSample,
   }
 };
 
@@ -54,7 +55,7 @@ export const rankingListTwo = {
   props: {
     isComponentActive: true,
     header: "판매순위",
-    productList: null,
+    productList: productListSample,
   }
 };
 
@@ -66,7 +67,7 @@ export const subMenuOne = {
     header: "MD'S CHOICE",
     productListComponent: "Album",
     categoryList: null,
-    productList: null,
+    productList: productListSample,
   }
 };
 
@@ -78,7 +79,7 @@ export const subMenuTwo = {
     header: "CHIHO'S CHOICE",
     productListComponent: "Album",
     categoryList: null,
-    productList: null,
+    productList: productListSample,
   }
 };
 
@@ -90,7 +91,7 @@ export const imageListSquare = {
     header: "즐거운 집콕생활 \n 닌텐도/레고 외 최대 35% 할인",
     link: "https://www.travelflan.com/",
     productListComponent: "List",
-    productList: null,
+    productList: productListSample,
     imageList: [
       {
         id: uuidv4(),
@@ -113,7 +114,7 @@ export const imageListRectange = {
     header: "안녕하세요 저의 이름은 민동준입니다. 만나서 반갑습니다!",
     link: "https://www.travelflan.com/",
     productListComponent: "Album",
-    productList: null,
+    productList: productListSample,
     imageList: [
       {
         id: uuidv4(),
@@ -136,7 +137,7 @@ export const imageListLongRectangle = {
     header: "Hello world!",
     link: "https://www.travelflan.com/",
     productListComponent: "List",
-    productList: null,
+    productList: productListSample,
     imageList: [
       {
         id: uuidv4(),

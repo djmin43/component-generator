@@ -26,6 +26,9 @@ interface Image {
 }
 
 const ImageListComponent = ({props}: Props) => {
+
+  console.log("testing2", props.productList);
+
   return (
     <div>
       <p>{props.header}</p>
@@ -45,7 +48,7 @@ const ImageListComponent = ({props}: Props) => {
         )}
       </div>
       <div className="product-list">
-        {componentGenerator(stringToComponent(props.productListComponent), {props: props})}
+        {componentGenerator(stringToComponent(props.productListComponent), { props: props.productList })}
       </div>
     </div>
   );
