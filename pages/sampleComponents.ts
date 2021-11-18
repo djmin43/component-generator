@@ -1,13 +1,18 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const bannerOne = {
-  id: 11234123419234,
+  id: uuidv4(),
   component: "BannerComponent",
   props: {
     header: "배너",
+    imageList: [
+
+    ]
   }
 };
 
 export const rankingListOne = {
-  id: 1283471924,
+  id: uuidv4(),
   component: "RankingListComponent",
   props: {
     header: "랭킹"
@@ -15,7 +20,7 @@ export const rankingListOne = {
 };
 
 export const subMenuOne = {
-  id: 1239402134,
+  id: uuidv4(),
   component: "SubMenuComponent",
   props: {
     header: "MD'S CHOICE"
@@ -23,7 +28,7 @@ export const subMenuOne = {
 };
 
 export const imageListOne = {
-  id: 1283759125,
+  id: uuidv4(),
   component: "ImageListComponent",
   props: {
     header: "즐거운 집콕생활 \n 닌텐도/레고 외 최대 35% 할인"
@@ -31,7 +36,7 @@ export const imageListOne = {
 };
 
 export const textOverlayImageOne = {
-  id: 882342341234,
+  id: uuidv4(),
   component: "TextOverlayImageComponent",
   props: {
     header: "#TECH",
@@ -40,7 +45,7 @@ export const textOverlayImageOne = {
 };
 
 export const productOne = {
-  id: 234283949234,
+  id: uuidv4(),
   component: "ProductComponent",
   props: {
     header: "WEEKLY 특가",

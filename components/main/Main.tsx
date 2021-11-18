@@ -4,7 +4,7 @@ import { componentGenerator } from "../../utils/componentGenerator";
 import stringToComponent from "../../utils/stringToComponent";
 
 interface Component {
-  id: number;
+  id: string;
   component: string;
   props: any;
 }
