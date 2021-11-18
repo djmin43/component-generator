@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ControlBar = () => {
   return (
@@ -14,7 +14,7 @@ const ControlBar = () => {
         delete component
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default ControlBar
+export default ControlBar;

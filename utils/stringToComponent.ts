@@ -1,7 +1,10 @@
 import { FunctionComponent } from "react";
-import BannerMain from "../components/component-types/BannerMain";
-import ImageListMain from "../components/component-types/ImageListMain";
-import ProductListMain from "../components/component-types/ProductListMain";
+import BannerComponent from "../components/component-types/BannerComponent";
+import ImageListComponent from "../components/component-types/ImageListComponent";
+import ProductComponent from "../components/component-types/productComponent";
+import RankingListComponent from "../components/component-types/RankingListComponent";
+import SubMenuComponent from "../components/component-types/SubMenuComponent";
+import TextOverlayImageComponent from "../components/component-types/TextOverlayImageComponent";
 import Album from "../components/product-types/Album";
 import List from "../components/product-types/List";
 
@@ -11,9 +14,12 @@ type ComponentType = {
 };
 
 const themeComponent: ComponentType = {
-  BannerMain,
-  ImageListMain,
-  ProductListMain,
+  BannerComponent,
+  ImageListComponent,
+  ProductComponent,
+  RankingListComponent,
+  SubMenuComponent,
+  TextOverlayImageComponent,
   Album,
   List,
 };
