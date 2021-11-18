@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import { css } from "@emotion/css";
 
 interface Props {
   props: {
-    header: string,
-    bannerImageList: Image[]
+    bannerImageType: string,
+    bannerImageList: Image[],
+    style: {
+      bannerImageWidth: number,
+      bannerImageHeight: number,
+    }
   }
 }
 
@@ -12,21 +17,23 @@ interface Image {
   id: string,
   imageSrc: string,
   link: string,
+  containerWidth: number,
+  containerHeight: number
 }
 
 const BannerComponent = ({props}: Props) => {
   return (
     <div>
-      <p>{props.header}</p>
-      <div className="image-container">
+      <div className={imageContainerStyle}>
         {props.bannerImageList.map}
         {props.bannerImageList.map((image: Image) =>
-        <a href="" key={image.id}>
+        <a href={image.link} key={image.id}>
           <Image
             src={image.imageSrc}
-            width={300}
-            height={300} 
+            layout="intrinsic"
             alt="image"
+            width = {props.style.bannerImageWidth}
+            height = {props.style.bannerImageWidth}
           />
         </a>
         )}
@@ -34,5 +41,9 @@ const BannerComponent = ({props}: Props) => {
     </div>
   );
 };
+
+const imageContainerStyle = css`
+  width: 100%;
+`;
 
 export default BannerComponent;

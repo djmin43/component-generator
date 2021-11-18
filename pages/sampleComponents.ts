@@ -4,16 +4,39 @@ export const bannerOne = {
   id: uuidv4(),
   component: "BannerComponent",
   props: {
-    header: "배너",
-    productListType: "Album",
+    isComponentActive: true,
+    bannerImageType: "square",
     bannerImageList: [
       {
         id: uuidv4(),
         imageSrc: "https://images.unsplash.com/photo-1637160083545-3907c0548d62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
         link: "https://www.travelflan.com/",
-        type: "square",
       }
-    ]
+    ],
+    style: {
+      bannerImageWidth: 2000,
+      bannerImageHeight: 2000,
+    }
+  }
+};
+
+export const bannerTwo = {
+  id: uuidv4(),
+  component: "BannerComponent",
+  props: {
+    isComponentActive: true,
+    bannerImageType: "rectangle",
+    bannerImageList: [
+      {
+        id: uuidv4(),
+        imageSrc: "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80",
+        link: "https://www.travelflan.com/",
+      }
+    ],
+    style: {
+      bannerImageWidth: 3200,
+      bannerImageHeight: 1040,
+    }
   }
 };
 
