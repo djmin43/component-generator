@@ -19,7 +19,7 @@ const mainIndexPageStyle = css`
 `;
 
 const componentList = [
-  bannerOne, rankingListOne, subMenuOne, imageListOne, productOne, textOverlayImageOne
+  textOverlayImageOne, subMenuOne, imageListOne, productOne, bannerOne, rankingListOne, 
 ];
 
 

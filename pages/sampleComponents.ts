@@ -5,8 +5,14 @@ export const bannerOne = {
   component: "BannerComponent",
   props: {
     header: "배너",
-    imageList: [
-
+    productListType: "Album",
+    bannerImageList: [
+      {
+        id: uuidv4(),
+        imageSrc: "https://images.unsplash.com/photo-1637160083545-3907c0548d62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+        link: "https://www.travelflan.com/",
+        type: "square",
+      }
     ]
   }
 };
