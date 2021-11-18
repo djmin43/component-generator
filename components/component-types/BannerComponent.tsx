@@ -33,7 +33,7 @@ const BannerComponent = ({props}: Props) => {
             layout="intrinsic"
             alt="image"
             width = {props.style.bannerImageWidth}
-            height = {props.style.bannerImageWidth}
+            height = {props.style.bannerImageHeight}
           />
         </a>
         )}
