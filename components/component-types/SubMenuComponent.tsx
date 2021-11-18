@@ -1,8 +1,14 @@
 import React from "react";
+import { componentGenerator } from "../../utils/componentGenerator";
+import stringToComponent from "../../utils/stringToComponent";
 
 interface Props {
   props: {
-    header: string
+    isComponentActive: boolean,
+    header: string,
+    productListComponent: string,
+    categoryList: any,
+    productList: any,
   }
 }
 

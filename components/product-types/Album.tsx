@@ -21,14 +21,14 @@ const Album = ({
 }: AlbumProps["props"]) => {
   return (
     <Fragment>
-      album
-      <Image src={imageSrc} alt="productName" width={300} height={300} />
+      album card
+      {/* <Image src={imageSrc} alt="productName" width={300} height={300} />
       <div className="product-information">
         <span>{brand}</span>
         <span>{productName}</span>
         <span>{discount}%</span>
         <span>{price}원</span>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

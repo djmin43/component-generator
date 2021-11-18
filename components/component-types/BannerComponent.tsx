@@ -4,7 +4,7 @@ import { css } from "@emotion/css";
 
 interface Props {
   props: {
-    bannerImageType: string,
+    isComponentActive: boolean,
     bannerImageList: Image[],
     style: {
       bannerImageWidth: number,
@@ -17,8 +17,6 @@ interface Image {
   id: string,
   imageSrc: string,
   link: string,
-  containerWidth: number,
-  containerHeight: number
 }
 
 const BannerComponent = ({props}: Props) => {

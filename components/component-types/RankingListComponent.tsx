@@ -2,7 +2,9 @@ import React from "react";
 
 interface Props {
   props: {
+    isComponentActive: boolean,
     header: string,
+    productList: any,
   }
 }
 
