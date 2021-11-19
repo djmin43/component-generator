@@ -9,7 +9,7 @@ export const bannerSquare = {
     bannerImageList: [
       {
         id: uuidv4(),
-        imageSrc: "https://images.unsplash.com/photo-1637160083545-3907c0548d62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+        imageSrc: "https://images.unsplash.com/photo-1637155108663-2c51fbc7f70c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1775&q=80",
         link: "https://www.travelflan.com/",
       }
     ],
@@ -28,7 +28,7 @@ export const bannerRectangle = {
     bannerImageList: [
       {
         id: uuidv4(),
-        imageSrc: "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80",
+        imageSrc: "https://images.unsplash.com/photo-1637109670737-aa2f781f90d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1690&q=80",
         link: "https://www.travelflan.com/",
       }
     ],
@@ -66,7 +66,6 @@ export const subMenuOne = {
     isComponentActive: true,
     header: "MD'S CHOICE",
     productListComponent: "Album",
-    categoryList: null,
     productList: productListSample,
   }
 };
@@ -95,7 +94,7 @@ export const imageListSquare = {
     imageList: [
       {
         id: uuidv4(),
-        imageSrc: "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80",
+        imageSrc: "https://images.unsplash.com/photo-1636973879067-9404573bdc78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1548&q=80",
         link: "https://www.travelflan.com/",
       }
     ],
@@ -118,7 +117,7 @@ export const imageListRectange = {
     imageList: [
       {
         id: uuidv4(),
-        imageSrc: "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80",
+        imageSrc: "https://images.unsplash.com/photo-1637088203844-d925792673bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1768&q=80",
         link: "https://www.travelflan.com/",
       }
     ],
@@ -141,8 +140,7 @@ export const imageListLongRectangle = {
     imageList: [
       {
         id: uuidv4(),
-        imageSrc: "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80",
-        link: "https://www.travelflan.com/",
+        imageSrc: "https://images.unsplash.com/photo-1637088745733-113d0121fb6d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=776&q=80",
       }
     ],
     style: {

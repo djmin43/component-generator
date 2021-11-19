@@ -6,8 +6,8 @@ interface Props {
   props: {
     isComponentActive: boolean,
     header: string,
+    link: string,
     productListComponent: string,
-    categoryList: any,
     productList: any,
   }
 }
@@ -16,6 +16,9 @@ const SubMenuComponent = ({props}: Props) => {
   return (
     <>
       <p>{props.header}</p>
+      <div>
+        {componentGenerator(stringToComponent(props.productListComponent), { props: props.productList })}
+      </div>
     </>
   );
 };

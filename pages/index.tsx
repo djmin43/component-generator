@@ -12,6 +12,7 @@ import {
   imageListLongRectangle,
   textOverlayImageLongRectangle,
   productOne,
+  subMenuTwo,
 } from "./sampleComponents";
 
 const Home: NextPage = () => {
@@ -33,6 +34,7 @@ const componentList = [
   textOverlayImageLongRectangle,
   imageListRectange,
   subMenuOne,
+  subMenuTwo,
   imageListLongRectangle,
   bannerSquare,
   imageListSquare,
