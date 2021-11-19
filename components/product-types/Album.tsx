@@ -25,7 +25,7 @@ const Album = ( { props } : AlbumProps) => {
       {props.map((product: Album) => 
       <div
         key={product.id}
-        className={productContainerStyle}
+        className={albumContainerStyle}
         >
           <Image
             src={product.image.src}
@@ -35,7 +35,7 @@ const Album = ( { props } : AlbumProps) => {
             alt="album product image"
           />
         <p>{product.productName}</p>
-        <p>{product.discountedPrice}%</p>
+        <p style={{ color: "blue" }}>{product.discount}%</p>
         <p>{product.originalPrice}원</p>
       </div>
       )}
@@ -43,7 +43,7 @@ const Album = ( { props } : AlbumProps) => {
   );
 };
 
-const productContainerStyle = css`
+const albumContainerStyle = css`
   display: flex;
   flex-direction: column;
   font-size: 10px;
