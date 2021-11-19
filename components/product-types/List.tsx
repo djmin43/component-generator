@@ -1,40 +1,30 @@
 import React, { CSSProperties } from "react";
 import Image from "next/image";
+import { css } from "@emotion/css";
 
 interface ListProps {
-  props: {
-    imageSrc: string;
-    brand: string;
-    productName: string;
-    discount: number;
-    price: number;
-    style?: CSSProperties;
-  } & any;
+  props: List[]
 }
 
-const List = ({
-  imageSrc,
-  brand,
-  productName,
-  discount,
-  price
-}: ListProps["props"]) => {
+interface List {
+  id: string,
+  productName: string,
+  discountedPrice: number,
+  originalPrice: number,
+  link: string,
+  discount: number,
+  image: {
+    id: string,
+    src: string,
+  }
+}
+const List = ({ props }: ListProps) => {
+  console.log("list", props);
   return (
-    <div
-      style={{
-        display: "flex"
-      }}
-    >
-      list card product
-      {/* <Image src={imageSrc} alt="product-name" width={300} height={300} />
-      <div>
-        <span>{brand}</span>
-        <span>{productName}</span>
-        <span>{discount}%</span>
-        <span>{price}원</span>
-      </div> */}
+    <div>
     </div>
   );
 };
+
 
 export default List;
