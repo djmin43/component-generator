@@ -10,7 +10,7 @@ import {
   imageListSquare,
   imageListRectange,
   imageListLongRectangle,
-  textOverlayImageOne,
+  textOverlayImageLongRectangle,
   productOne,
 } from "./sampleComponents";
 
@@ -29,7 +29,7 @@ const mainIndexPageStyle = css`
 `;
 
 const componentList = [
-  textOverlayImageOne, imageListRectange, subMenuOne, imageListLongRectangle, bannerSquare, imageListSquare, productOne, bannerRectangle, rankingListOne, 
+  textOverlayImageLongRectangle, imageListRectange, subMenuOne, imageListLongRectangle, bannerSquare, imageListSquare, productOne, bannerRectangle, rankingListOne, 
 ];
 
 

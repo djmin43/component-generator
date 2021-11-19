@@ -152,12 +152,27 @@ export const imageListLongRectangle = {
   }
 };
 
-export const textOverlayImageOne = {
+export const textOverlayImageLongRectangle = {
   id: uuidv4(),
   component: "TextOverlayImageComponent",
   props: {
+    isComponentActive: true,
     header: "#TECH",
-    subheader: "이달의 브랜드 & 제품"
+    subHeader: "이달의 브랜드 & 제품",
+    link: "https://www.travelflan.com/",
+    productListComponent: "List",
+    productList: productListSample,
+    imageList: [
+      {
+        id: uuidv4(),
+        imageSrc: "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80",
+        link: "https://www.travelflan.com/",
+      }
+    ],
+    style: {
+      imageWidth: 2160,
+      imageHeight: 2880,
+    }
   }
 };
 

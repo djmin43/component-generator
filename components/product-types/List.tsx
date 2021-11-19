@@ -31,8 +31,8 @@ const List = ({ props }: ListProps) => {
             <Image
               src={product.image.src}
               layout="intrinsic"
-              width={300}
-              height={300}
+              width={100}
+              height={100}
               alt="album product image"
             />
           </div>

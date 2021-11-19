@@ -26,9 +26,6 @@ interface Image {
 }
 
 const ImageListComponent = ({props}: Props) => {
-
-  console.log("testing2", props.productList);
-
   return (
     <div>
       <p>{props.header}</p>
