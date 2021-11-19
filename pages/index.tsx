@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   return (
     <div className={mainIndexPageStyle}>
       <Main componentList={componentList} />
-      <ControlBar />
+      <ControlBar componentList={componentList} />
     </div>
   );
 };

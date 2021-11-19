@@ -1,6 +1,17 @@
 import React from "react";
 
-const ControlBar = () => {
+interface Component {
+  id: string;
+  component: string;
+  props: any;
+}
+
+interface MainProps {
+  componentList: Component[];
+}
+
+
+const ControlBar = ( { componentList }: MainProps) => {
   return (
     <div>
       i am controller
