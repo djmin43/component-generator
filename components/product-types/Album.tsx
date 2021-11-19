@@ -19,7 +19,7 @@ const Album = ( props : AlbumProps) => {
   console.log("testing", props);
   return (
     <Fragment>
-      album card product
+      
     </Fragment>
   );
 };
