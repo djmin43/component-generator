@@ -19,7 +19,6 @@ interface Album {
 }
 
 const Album = ( { props } : AlbumProps) => {
-  console.log("album", props);
   return (
     <div className={albumStyle}>
       {props.map((product: Album) => 
@@ -27,13 +26,15 @@ const Album = ( { props } : AlbumProps) => {
         key={product.id}
         className={albumContainerStyle}
         >
-          <Image
-            src={product.image.src}
-            layout="intrinsic"
-            width={100}
-            height={100}
-            alt="album product image"
-          />
+          <a href={product.link}>
+            <Image
+              src={product.image.src}
+              layout="intrinsic"
+              width={100}
+              height={100}
+              alt="album product image"
+            />
+        </a>
         <p>{product.productName}</p>
         <p style={{ color: "blue" }}>{product.discount}%</p>
         <p>{product.originalPrice}원</p>

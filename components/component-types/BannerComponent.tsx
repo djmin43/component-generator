@@ -21,7 +21,7 @@ interface Image {
 
 const BannerComponent = ({props}: Props) => {
   return (
-    <div>
+    <>
       <div className={imageContainerStyle}>
         {props.bannerImageList.map}
         {props.bannerImageList.map((image: Image) =>
@@ -36,7 +36,7 @@ const BannerComponent = ({props}: Props) => {
         </a>
         )}
       </div>
-    </div>
+    </>
   );
 };
 

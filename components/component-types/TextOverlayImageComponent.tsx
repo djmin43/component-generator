@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Image from "next/image";
 import { componentGenerator } from "../../utils/componentGenerator";
 import stringToComponent from "../../utils/stringToComponent";
@@ -8,6 +8,7 @@ interface Props {
     isComponentActive: boolean,
     header: string,
     subHeader: string,
+    overlayText: string,
     link: string,
     productListComponent: string,
     productList: any,
@@ -28,7 +29,7 @@ interface Image {
 
 const TextOverlayImageComponent = ({ props }: Props) => {
   return (
-    <div>
+    <>
       <p>{props.subHeader}</p>
       <p>{props.header}</p>
       <div className="image">
@@ -49,7 +50,7 @@ const TextOverlayImageComponent = ({ props }: Props) => {
       <div className="product-list">
         {componentGenerator(stringToComponent(props.productListComponent), { props: props.productList })}
       </div>
-    </div>
+    </>
   );
 };
 

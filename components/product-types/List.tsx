@@ -19,7 +19,6 @@ interface List {
   }
 }
 const List = ({ props }: ListProps) => {
-  console.log("list", props);
   return (
     <div className={listStyle}>
       {props.map((product: List) => 
@@ -28,13 +27,15 @@ const List = ({ props }: ListProps) => {
         className={listContainerStyle}
         >
           <div>
-            <Image
-              src={product.image.src}
-              layout="intrinsic"
-              width={100}
-              height={100}
-              alt="album product image"
-            />
+            <a href={product.link}>
+              <Image
+                src={product.image.src}
+                layout="intrinsic"
+                width={100}
+                height={100}
+                alt="album product image"
+              />
+            </a>
           </div>
           <div>
             list

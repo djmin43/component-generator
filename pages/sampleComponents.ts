@@ -77,7 +77,7 @@ export const subMenuTwo = {
   props: {
     isComponentActive: true,
     header: "CHIHO'S CHOICE",
-    productListComponent: "Album",
+    productListComponent: "List",
     categoryList: null,
     productList: productListSample,
   }
@@ -159,6 +159,7 @@ export const textOverlayImageLongRectangle = {
     isComponentActive: true,
     header: "#TECH",
     subHeader: "이달의 브랜드 & 제품",
+    overlayText: "DYSON!",
     link: "https://www.travelflan.com/",
     productListComponent: "List",
     productList: productListSample,
@@ -172,6 +173,7 @@ export const textOverlayImageLongRectangle = {
     style: {
       imageWidth: 2160,
       imageHeight: 2880,
+      textColor: "#6FB0E3"
     }
   }
 };
@@ -180,6 +182,9 @@ export const productOne = {
   id: uuidv4(),
   component: "ProductComponent",
   props: {
-    header: "WEEKLY 특가",
-  }
+    isComponentActive: true,
+    header: "WEEKLY 특가!",
+    link: "https://www.travelflan.com/",
+    productListComponent: "Album",
+    productList: productListSample,  }
 };

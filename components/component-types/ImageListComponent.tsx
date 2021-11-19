@@ -27,7 +27,7 @@ interface Image {
 
 const ImageListComponent = ({props}: Props) => {
   return (
-    <div>
+    <>
       <p>{props.header}</p>
       <div className="image">
         {props.imageList.map((image: Image) => 
@@ -47,7 +47,7 @@ const ImageListComponent = ({props}: Props) => {
       <div className="product-list">
         {componentGenerator(stringToComponent(props.productListComponent), { props: props.productList })}
       </div>
-    </div>
+    </>
   );
 };
 

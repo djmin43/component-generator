@@ -29,7 +29,15 @@ const mainIndexPageStyle = css`
 `;
 
 const componentList = [
-  textOverlayImageLongRectangle, imageListRectange, subMenuOne, imageListLongRectangle, bannerSquare, imageListSquare, productOne, bannerRectangle, rankingListOne, 
+  productOne,
+  textOverlayImageLongRectangle,
+  imageListRectange,
+  subMenuOne,
+  imageListLongRectangle,
+  bannerSquare,
+  imageListSquare,
+  bannerRectangle,
+  rankingListOne, 
 ];
 
 

@@ -14,9 +14,9 @@ interface Props {
 
 const SubMenuComponent = ({props}: Props) => {
   return (
-    <div>
+    <>
       <p>{props.header}</p>
-    </div>
+    </>
   );
 };
 

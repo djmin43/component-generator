@@ -10,9 +10,9 @@ interface Props {
 
 const RankingListComponent = ({props}: Props) => {
   return (
-    <div>
+    <>
       <p>{props.header}</p>
-    </div>
+    </>
   );
 };
 
