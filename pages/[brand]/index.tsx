@@ -1,18 +1,17 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-const Page = () => {
+const Index = () => {
   const router = useRouter();
-  const { page, id } = router.query;
+  const { brand } = router.query;
   console.log(router.query);
-  
+
   return (
     <div>
-      hello world!
-      this page is: {page}
-      id is: {id}
+      this is home page
+      this brand is: {brand}
     </div>
   );
 };
 
-export default Page;
+export default Index;

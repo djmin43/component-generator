@@ -30,7 +30,6 @@ const mainIndexPageStyle = css`
 `;
 
 const componentList = [
-  productOne,
   textOverlayImageLongRectangle,
   imageListRectange,
   subMenuOne,
@@ -39,6 +38,7 @@ const componentList = [
   bannerSquare,
   imageListSquare,
   bannerRectangle,
+  productOne,
   rankingListOne, 
 ];
 

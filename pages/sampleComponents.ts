@@ -14,8 +14,8 @@ export const bannerSquare = {
       }
     ],
     style: {
-      bannerImageWidth: 3000,
-      bannerImageHeight: 3000,
+      bannerImageWidth: 1000,
+      bannerImageHeight: 5000,
     }
   }
 };
