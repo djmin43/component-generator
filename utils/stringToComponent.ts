@@ -8,7 +8,6 @@ import TextOverlayImageComponent from "../components/component-types/TextOverlay
 import Album from "../components/product-types/Album";
 import List from "../components/product-types/List";
 
-
 type ComponentType = {
   [Key in string]: FunctionComponent<{ props: any }>;
 };
